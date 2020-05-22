@@ -1,0 +1,50 @@
+	<!-- Start Header Area -->
+	<header class="default-header">
+		
+
+		<div class="main-menu">
+			<div class="container">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div id="logo">
+						<a href="/home"><img src="/img/room_1.png" alt="img" title="" /></a>
+					</div>
+					<nav id="nav-menu-container">
+						<ul class="nav-menu">
+							<li class="menu-active"><a href="/home">home</a></li>
+							<li><a href="/home/property/1">properties</a></li>
+							<% if(currentUser){ %>
+							<li><a href="/home/platinum/new">New property</a></li>
+							<% } %>
+							<li class="menu-has-children"><a href="">Pages</a>
+								<ul>
+									<li><a href="#agents">Agents</a></li>
+									<li><a href="#">Elements</a></li>
+								</ul>
+							</li>
+							<li><a href="#contact">Contact</a></li>
+							<% if(!currentUser){ %>
+                            <li class="menu-has-children"><a href=""> Login/Rigister</a>
+								<% } else { %>
+							<li class="menu-has-children"> <a href="/logout">LOGOUT</a> 
+								<% } %>
+								<ul>
+								<% if(!currentUser){ %>
+							
+									<li><a href="/login">Login</a></li>
+									<li><a href="/register">Rigister</a></li>
+								
+								<% } else { %>
+									<li><a href="#">Signed In As <%= currentUser.username %></a></li>
+									<li><a href="/logout">Logout</a></li>
+									<% } %>
+								</ul>
+								</li>
+						</ul>
+					</nav>
+					
+				</div>
+			</div>
+		</div>
+  </header>
+  
+

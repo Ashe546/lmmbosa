@@ -1,0 +1,151 @@
+<%- include('../partials/header.ejs')  %> 
+<%- include('../partials/nav.ejs')  %>  
+
+<div class="row" style="margin-top: 70px;">
+    <div class="col-2"></div>
+    <div class="col-md-7 mb-5">
+
+
+<form class="formfield"  action="/home" method="POST" enctype="multipart/form-data">
+   
+    <div class="row">
+    <div class="col-12">
+        <label>Type</label>
+        <select class="form-control" list="rent" name="rent" value="<%= platinum.rent %>" placeholder="rent">
+        
+          <option value="For Sale">For Sale
+          <option value="For Rent">For Rent
+       
+        </select>
+       </div>
+
+    
+  
+        <div class="col-6">
+        <label>Catagory</label>
+        <select class="form-control" list="catagory" name="catagory" value="<%= platinum.catagory %>" placeholder="catagory">
+          <option value="<%= currentUser.username %>"><%= currentUser.username %>
+          <option value="condominum">condominum
+          <option value="Villa">Villa
+        
+        </select>
+       </div>
+       
+
+       <div class="col-6">
+        <label>Title</label>
+        <input class="form-control" type="text" name="title"  placeholder="title"> 
+       
+       </div>
+    </div>
+    <div class="col-6" style="display: none;">
+      <label>phone number</label>
+      <select class="form-control" list="phonenumber" name="phonenumber" value="<%= platinum.phonenumber %>" placeholder="phonenumber">
+        <option value="<%= currentUser.phonenumber %>"><%= currentUser.phonenumber %>
+      
+      </select>
+     </div>
+  
+
+      <label>Price</label>  
+      <input class="form-control" type="number" name="price" value="<%= platinum.price %>" placeholder="price">
+      <label>size</label>
+      <input class="form-control" type="number" name="size" value="<%= platinum.area %>" placeholder="size">
+      <label>location</label>
+      <select class="form-control" type="text" name="location" value="<%= platinum.location %>"  placeholder="location">
+      <option value="CMC">CMC
+      <option value="CMC">Bole
+      <option value="CMC">22 mazoria
+      <option value="CMC">4 kilo
+      <option value="CMC">Addisu Gebeya
+      <option value="CMC">Akaki
+      <option value="CMC">Aware
+      <option value="CMC">Ayate
+      <option value="CMC">Ayer Tena
+      <option value="CMC">Bethel
+      <option value="CMC">Bole Bulbula
+      <option value="CMC">Bole Michael
+      <option value="CMC">Gerji
+      <option value="CMC">Gullele
+      <option value="CMC">Gurd Shola
+      <option value="CMC">22
+      <option value="CMC">Jemo
+      <option value="CMC">Kality
+      <option value="CMC">Kazanchis
+      <option value="CMC">Kebena
+      <option value="CMC">Kera
+      <option value="CMC">Kore
+      <option value="CMC">Kotebe
+      <option value="CMC">Lafto
+      <option value="CMC">Lanchia
+      <option value="CMC">Lebu
+      <option value="CMC">Legetafo
+      <option value="CMC">Lideta
+      <option value="CMC">Megenaga
+      <option value="CMC">Mekanisa
+      <option value="CMC">Meskel Flower
+      <option value="CMC">Mexico
+      <option value="CMC">Old Air Port
+      <option value="CMC">Olompia
+      <option value="CMC">piassa
+      <option value="CMC">Sar Bet
+      <option value="CMC">Saris
+      <option value="CMC">Summit
+      <option value="CMC">Tor hailoch
+      <option value="CMC">Wollow sefer
+      <option value="CMC">Wosen
+      <option value="CMC">Yeka
+      <option value="CMC">Yeka Abado
+
+
+
+
+
+      </select>
+      <label>City</label>
+      <select class="form-control" type="text" name="city" value="<%= platinum.city %>"  placeholder="city">
+        <option value="Addis Abeba">Addis Abeba</option>
+      </select>
+      <div class="row">
+        <div class="col-6">
+      <label>Bed room</label>
+      <input class="form-control" type="number" name="bedroom" value="<%= platinum.bedroom %>" placeholder="bedroom" max="10" min="1" >
+      </div>
+      <div class="col-6">
+      <label>bath room</label>
+      <input class="form-control" type="number" name="bathroom" value="<%= platinum.bathroom %>" placeholder="bathroom" max="10">
+    </div>
+        </div>
+     
+      <label>Blog Content</label>
+
+<textarea class="form-control" value="discription" name="discription" ></textarea>
+<div style="display: block;">
+<label>Image</label>
+<input type="file" name="upA" accept="image/*" required  multiple  >
+<input type="file" name="upA" accept="image/*" required  multiple  >
+<input type="file" name="upA" accept="image/*" required  multiple  >
+
+
+</div>
+
+<div style="display: flex; margin-top: 20px;" >
+  <ul class="features">
+    <li class="check"  style="display: flex;"> <input style="margin-right:10px"  type="checkbox" value="carparking"  name="carparking">Car parking</li>
+    <li class="check"  style="display: flex;"> <input style="margin-right:10px"  type="checkbox" value="waterpark"   name="waterpark">Water Tank</li>
+    <li class="check"  style="display: flex;"> <input style="margin-right:10px"  type="checkbox" value="fireplace"   name="fireplace">Fireplace</li>
+    <li class="check"  style="display: flex;"> <input style="margin-right:10px"  type="checkbox" value="fence"       name="fence">Fence</li>
+    <li class="check"  style="display: flex;"> <input style="margin-right:10px"  type="checkbox" value="wifi"        name="wifi">Wifi</li>
+    <li class="check"  style="display: flex;"> <input style="margin-right:10px"  type="checkbox" value="garden"      name="garden">Garden</li>
+</ul>
+</div>
+<input class="btn btn-lg btn-danger" type="submit">
+</form>
+
+</div>
+</div>
+
+<%- include('../partials/footer.ejs')  %> 
+
+</body>
+</html>

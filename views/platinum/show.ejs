@@ -1,0 +1,259 @@
+<%- include('../partials/header.ejs')  %> 
+<%- include('../partials/nav.ejs')  %>   
+    
+</head>
+<body>
+ 
+   <div class="super-contener">
+     
+      <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half eventtran" data-ride="carousel">        
+          <!--indicators-->
+          <ol class="carousel-indicators">
+            <% if (platinum.image) {%> 
+              <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                 <% }; %>
+            <% if (platinum.image2) {%> 
+                <li data-target="#carousel-example-2" data-slide-to="2" class="active"></li>
+                    <% }; %>
+            <% if (platinum.image3) {%> 
+                <li data-target="#carousel-example-2" data-slide-to="3" class="active"></li>
+                        <% }; %>
+            <% if (platinum.image4) {%> 
+                <li data-target="#carousel-example-2" data-slide-to="4" class="active"></li>
+                        <% }; %>            
+            <% if (platinum.image5) {%> 
+                <li data-target="#carousel-example-2" data-slide-to="5" class="active"></li>
+                        <% }; %>
+            <% if (platinum.image6) {%> 
+                <li data-target="#carousel-example-2" data-slide-to="6" class="active"></li>
+                        <% }; %>
+            <% if (platinum.image7) {%> 
+                <li data-target="#carousel-example-2" data-slide-to="6" class="active"></li>
+                        <% }; %>
+            <% if (platinum.image8) {%> 
+                <li data-target="#carousel-example-2" data-slide-to="6" class="active"></li>
+                         <% }; %>
+             <% if (platinum.image9) {%> 
+                <li data-target="#carousel-example-2" data-slide-to="6" class="active"></li>
+                         <% }; %>                          
+
+
+          </ol>
+          <!--/ .Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+
+            <% if (platinum.image) {%> 
+          <div class="carousel-item active">
+                  <img class="eventslide"src="/uploads/<%= platinum.image%>" alt="FIRST SLIDE">  
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>EVENT 1</h5>
+                  <P>THIS IS AN EVENT</P>
+                  <p>Location</p>
+              </div> 
+          </div>
+          <% }; %>
+          <% if (platinum.image2) {%> 
+          <div class="carousel-item">
+                  <img  class="eventslide" src="/uploads/<%= platinum.image2%>" alt="second slide">       
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>EVENT 2</h5>
+                  <P>THIS IS AN EVENT</P>
+                  <p>Location</p>
+              </div>
+          </div> 
+          <% }; %>
+          <% if (platinum.image3) {%>    
+          <div class="carousel-item ">
+                  <img class="eventslide" src="/uploads/<%= platinum.image3%>" alt="third SLIDE">          
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>EVENT 3</h5>
+                  <P>THIS IS AN EVENT</P>
+                  <p>Location</p>
+              </div>
+          </div>
+
+      <% }; %>
+      <% if (platinum.image4) {%> 
+        <div class="carousel-item ">
+          <img class="eventslide"src="/uploads/<%= platinum.image%>" alt="FIRST SLIDE">  
+      <div class="carousel-caption d-none d-md-block">
+          <h5>EVENT 1</h5>
+          <P>THIS IS AN EVENT</P>
+          <p>Location</p>
+      </div> 
+  </div>
+    <% }; %>
+    <% if (platinum.image5) {%> 
+        <div class="carousel-item ">
+          <img class="eventslide"src="/uploads/<%= platinum.image%>" alt="FIRST SLIDE">  
+      <div class="carousel-caption d-none d-md-block">
+          <h5>EVENT 1</h5>
+          <P>THIS IS AN EVENT</P>
+          <p>Location</p>
+      </div> 
+  </div>
+    <% }; %>
+    <% if (platinum.image6) {%> 
+        <div class="carousel-item ">
+          <img class="eventslide"src="/uploads/<%= platinum.image%>" alt="FIRST SLIDE">  
+      <div class="carousel-caption d-none d-md-block">
+          <h5>EVENT 1</h5>
+          <P>THIS IS AN EVENT</P>
+          <p>Location</p>
+      </div> 
+  </div>
+    <% }; %>
+    <% if (platinum.image7) {%> 
+        <div class="carousel-item ">
+          <img class="eventslide"src="/uploads/<%= platinum.image%>" alt="FIRST SLIDE">  
+      <div class="carousel-caption d-none d-md-block">
+          <h5>EVENT 1</h5>
+          <P>THIS IS AN EVENT</P>
+          <p>Location</p>
+      </div> 
+  </div>
+    <% }; %>
+    <% if (platinum.image8) {%> 
+        <div class="carousel-item ">
+          <img class="eventslide"src="/uploads/<%= platinum.image%>" alt="FIRST SLIDE">  
+      <div class="carousel-caption d-none d-md-block">
+          <h5>EVENT 1</h5>
+          <P>THIS IS AN EVENT</P>
+          <p>Location</p>
+      </div> 
+  </div>
+    <% }; %>
+    <% if (platinum.image9) {%> 
+        <div class="carousel-item ">
+          <img class="eventslide"src="/uploads/<%= platinum.image%>" alt="FIRST SLIDE">  
+      <div class="carousel-caption d-none d-md-block">
+          <h5>EVENT 1</h5>
+          <P>THIS IS AN EVENT</P>
+          <p>Location</p>
+      </div> 
+  </div>
+    <% }; %>
+
+  
+       
+              <a class="carousel-control-prev" href="#carousel-example-2"  role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">NEXT</span>
+              </a>
+          </div>
+    </div> 
+
+
+
+
+<section class="ftco-section ftco-property-details">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="property-details">
+
+                    <div class="text">
+                        <h2>Green Valey Home</h2>
+                        <span class="subheading">2854 Meadow View Drive, Hartford, USA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 pills">
+                      <div class="bd-example bd-example-tabs">
+                          <div class="d-flex">
+                            <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+
+                              <li class="nav-item">
+                                <a class="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-expanded="true">Features</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true">Description</a>
+                              </li>
+                              <li class="nav-item" style="padding-top: 10px;">
+                                <a class="nav-link" id="pills-tab" data-toggle="pill" href="#pills" role="tab" aria-controls="pills" aria-expanded="true">Extra information</a>
+                              </li>
+                            
+                            </ul>
+                          </div>
+
+
+
+                        <div class="tab-content" id="pills-tabContent">
+                          <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <ul class="features">
+                                          <li class="check"><span class="ion-ios-checkmark-circle"></span>City: <%= platinum.city%></li>
+                                          <li class="check"><span class="ion-ios-checkmark-circle"></span>Location: <%= platinum.location%></li>
+                                          <li class="check"><span class="ion-ios-checkmark-circle"></span>Catagory: <%= platinum.catagory%></li>
+                                          <li class="check"><span class="ion-ios-checkmark-circle"></span>Property for : <%= platinum.rent%></li>
+                                          <li class="check"><span class="ion-ios-checkmark-circle"></span>Phone Number : 0922426392</li>
+                                      </ul>
+                                  </div>
+                                  <div class="col-md-4" >
+                                      <ul class="features">
+                                          <li class="check"><span class="ion-ios-checkmark-circle"></span>Lot Area: <%= platinum.area%></li>
+                                          <li class="check"><span class="ion-ios-checkmark-circle"></span>Bed Rooms: <%= platinum.bedroom%></li>
+                                          <li class="check"><span class="ion-ios-checkmark-circle"></span>Bath Rooms: <%= platinum.bathroom%></li>
+                                      </ul>
+                                  </div>
+                               <div class="col-md-4" style="height: 100px; background: blueviolet;">
+                               <div class="row">
+                                   <div class="col-12">
+                                    <h3>Call : <%= platinum.phonenumber %></h3>
+                                   </div>
+                               </div>
+                               <div class="row" style="width: 100%; background-color: black;">
+                                <div class="col-2">hell</div>
+                                <div class="col-2">hell</div>
+                                <div class="col-2">hell</div>
+                                <div class="col-2">hell</div>
+
+                               </div>
+                               
+                            </div>
+                              </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="pills-manufacturer" role="tabpanel" aria-labelledby="pills-manufacturer-tab">
+                            <p><%= platinum.discription%></p>
+                          </div>
+                          <div class="tab-pane fade" id="pills" role="tabpanel" aria-labelledby="pills-tab">
+                        <ul>
+                            <li><%= platinum.watertank%></li>
+                            <li><%= platinum.fence%></li>
+                            <li><%= platinum.wifi%></li>
+                            <li><%= platinum.garden%></li>
+                            <li><%= platinum.fireplace%></li>
+                            <li><%= platinum.carparking%></li>
+
+                        </ul>
+                            
+
+                        </div>
+                         
+                        </div>
+                      </div>
+            </div>
+              </div>
+    </div>
+  </section>
+      
+
+  
+   
+  
+
+    
+
+
+<%- include('../partials/footer.ejs')  %> 
+</body>
+</html>

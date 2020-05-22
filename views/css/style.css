@@ -1,0 +1,214 @@
+.slide{
+    height: fit-content;
+    margin-top: 60px;
+    }
+    .w-q{
+        max-height: 500px;
+        height: -webkit-fill-available;
+    }
+    .w-q1{
+        padding-left: 5%;
+        
+    }
+    .w-q2{
+        margin-right: 2%;
+    }
+    @media (min-width: 1400px){
+        .w-q{
+            max-height: 700px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.eventslide{
+    max-height: 400px;
+    width: 100% !important;
+   min-height: 100px;
+    
+
+}
+    .eventslide2{
+        max-height: 400px;
+        width: 100% !important;
+       min-height: 200px; 
+    
+    }
+       
+    .movieoftheday{
+        margin-top: 20px;
+        max-height: 400px;
+        min-height: 200px;
+    }
+   
+.scrolling-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.card {
+    display: inline-block;
+    min-width: 200px;
+    min-height: 200px;
+}
+.movieslider{
+    margin-top: 60px;
+}
+.discription{
+    background-color: aqua;
+    min-height: 200px;
+    max-height: 650px;
+}
+.ret{
+    max-width: 300px;
+    max-height: 300px;
+}
+.detai{
+    margin-top: 30px;
+    min-height: 200px;
+    max-height: 400px;
+}
+.prodetaile{
+    margin: 10px;
+}
+.ageimgdiv{
+    max-height: 400px;
+    max-width: 400px;
+    margin-left: 20px;
+}
+.ageimg{
+    max-height: 300px;
+    max-width: 400px;
+}
+.agentdes{
+    margin-top: 20px;
+    height: 100px;
+}
+.listdetail{
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+.footer1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer2{
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+.formfield{
+    margin: 20px;
+    display: grid;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width:500px){
+    .homeserch{
+        margin-top: 100px;
+        text-align: center;
+        display: table-caption;
+        background-color: transparent;
+        border-radius: 50px;
+        -webkit-transition: all .15s ease-in-out;
+         transition: all .15s ease-in-out;
+         color: #FE7831;
+         display: unset;
+    }
+
+    .homeserch:hover{
+        box-shadow: 0 0 #FE7831 inset, 0 0 20px 2px #FE7831;
+        border: 3px solid #FE7831;
+    }
+
+    .serchinput{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        border-radius: 10px;
+        text-align: center;
+
+    }
+    .serchinput:hover{
+        box-shadow: 0 0 #FE7831 inset, 0 0 20px 2px #FE7831;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:500px){
+
+
+.homeserch
+{
+    margin-top: 60px;
+    background-color: blue;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+    border: 3px solid #FE7831;
+    border-radius: 45px;
+    -webkit-transition: all .15s ease-in-out;
+     transition: all .15s ease-in-out;
+     color:#FE7831;
+     display: inherit;
+     text-align: center;
+}
+
+.homeserch:hover{
+    box-shadow: 0  0 #FE7831 inset, 0 0 20px 2px #FE7831;
+    border: 10px solid #FE7831;
+}
+.serchinput{
+    margin-top: 0.5%;
+    border-radius: 3px;
+    text-align: center;
+}
+.serchinput:hover{
+    box-shadow: 0 0 #FE7831 inset, 0 0 20px 2px #FE7831;
+    border: 6px solid #FE7831;
+    text-align: center;
+}
+
+
+}
+
+.single-property:hover {
+    background: #e4e2e2;
+    box-shadow: 0 8px 28px rgba(252, 113, 0, 0.5); }
+    .single-property:hover img {
+      transform: scale(1.09); }
+
+.nextandpreviouspage{
+    background-color: rgba(206, 114, 28, 0.336);
+    text-align: center;
+    display: inherit;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 2px;
+}
+.nextandpreviouspage:hover{
+    transform: scale(1.2);
+    background-color: rgba(206, 114, 28, 0.521);
+}
+
+img{
+    height: -webkit-fill-available;
+}
